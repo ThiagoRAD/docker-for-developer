@@ -1,4 +1,5 @@
 # some images already create a user, like this one created a node user with id 1000
+# it is created explicitly further for learning purposes
 FROM node:22.9.0-slim
 
 # We could use RUN twice, but we use it only once, so that we have a single layer instead of more
@@ -7,3 +8,12 @@ RUN apt update && \
     npm install -g nodemon 
 # nodemon being installed globally though is a waste, there are better strategies
 
+#debian
+#RUN useradd -m -u 1000 someuser
+# RUN usermod -u 1000 someuser
+
+#alpine
+#RUN adduser -D -u 1000 someuser
+#RUN sed -i 's/1000/1001/g' /etc/passwd
+
+USER node
