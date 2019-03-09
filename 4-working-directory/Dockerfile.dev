@@ -1,0 +1,9 @@
+FROM node:latest
+
+USER node
+
+# this folder will now belong to the node user
+# but if we invert the order of user and workdir, it will belong to root
+# node will still have write access
+WORKDIR /home/node/app 
+
