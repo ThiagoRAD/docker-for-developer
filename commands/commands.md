@@ -22,6 +22,7 @@ docker compose build service-name
 ### Accessing Container with Root User
 ```cmd
 docker compose exec service-name bash
-docker compose exec --user root service-name bash
+docker compose exec -u root service-name bash
+docker compose exec -uroot service-name bash
 :: access container shell as root user
 ```
