@@ -33,3 +33,11 @@ docker compose config
 :: shows you the configuration used to run the containers
 :: useful for checking the configurations when using profiles, overrides or other configurations
 ```
+
+### pre-defined environment variables on the compose
+
+- COMPOSE_FILE
+- COMPOSE_PROFILES
+- COMPOSE_PROJECT_NAME
+
+If you export a COMPOSE_FILE=somefilename when you do a docker-compose up, it is the same as doing a ``docker compose up -f somefilename``
