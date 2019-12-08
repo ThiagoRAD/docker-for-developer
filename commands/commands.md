@@ -18,3 +18,10 @@ docker compose build
 docker compose build service-name
 :: does not execute the container, just builds the images
 ```
+
+### Accessing Container with Root User
+```cmd
+docker compose exec service-name bash
+docker compose exec --user root service-name bash
+:: access container shell as root user
+```
