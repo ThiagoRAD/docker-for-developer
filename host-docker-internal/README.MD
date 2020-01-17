@@ -9,3 +9,8 @@
 ``127.0.0.1 host.docker.internal``
 - mac or linux ``/etc/hosts``
 - windows ``C:\Windows\System32\drivers\etc\hosts``
+- lastly add the field extra_hosts at the compose file
+```yaml
+extra_hosts:
+  - "host.docker.internal:host-gateway" 
+```
