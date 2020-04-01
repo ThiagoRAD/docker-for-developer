@@ -41,3 +41,5 @@ docker compose config
 - COMPOSE_PROJECT_NAME
 
 If you export a COMPOSE_FILE=somefilename when you do a docker-compose up, it is the same as doing a ``docker compose up -f somefilename``
+
+- can be interesting to modify the settings.json at the .vscode, so that you have different profiles on different terminals, making it easier to run .dev or .test compose files for example.
