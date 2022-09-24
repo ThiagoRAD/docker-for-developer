@@ -1,0 +1,7 @@
+FROM node:22.9.0-slim
+
+# We could use RUN twice, but we use it only once, so that we have a single layer instead of more
+RUN apt update && \
+    apt install -y curl && \
+    npm install -g nodemon 
+# nodemon being installed globally though is a waste, there are better strategies
