@@ -10,3 +10,7 @@
 - Busybox
 - Scratch (The simplest image)
 - Distroless (Does not have a shell, usually very safe and small)
+
+## Vulnerabilities
+
+- Most dockerhub images have vulnerabilities (last research showed more than 60% of the images had vulnerabilities)
