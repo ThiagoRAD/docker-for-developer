@@ -15,5 +15,6 @@ docker compose run web node -v
 ### Docker compose build
 ```cmd
 docker compose build
+docker compose build service-name
 :: does not execute the container, just builds the images
 ```
