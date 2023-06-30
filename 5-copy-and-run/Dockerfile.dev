@@ -5,5 +5,9 @@ WORKDIR /home/node/app
 
 # If the package.json file is not changed, the RUN npm install step will be cached
 # and subsequent builds will be faster
-COPY package.json .
+COPY package*.json .
 RUN npm install
+
+# We never want to copy the node_modules folder from the host machine
+# because it can cause issues with different OS and architectures
+COPY . .
