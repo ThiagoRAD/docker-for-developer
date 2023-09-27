@@ -26,3 +26,10 @@ docker compose exec -u root service-name bash
 docker compose exec -uroot service-name bash
 :: access container shell as root user
 ```
+
+### Docker compose config
+```
+docker compose config
+:: shows you the configuration used to run the containers
+:: useful for checking the configurations when using profiles, overrides or other configurations
+```
