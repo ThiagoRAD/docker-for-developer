@@ -1,4 +1,5 @@
 # Docker for Development
+This repository was used to learn more about the docker usage for the development process.
 
 ## WSL
 * WSL is Windows Subsystem for Linux
