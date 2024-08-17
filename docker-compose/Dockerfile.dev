@@ -11,4 +11,5 @@ WORKDIR /home/node/app
 
 EXPOSE 3000
 
-CMD ["/start.sh"] 
+# CMD ["/start.sh"] 
+CMD ["tail", "-f", "/dev/null"] 
