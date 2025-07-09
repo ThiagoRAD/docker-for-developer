@@ -1,0 +1,9 @@
+FROM node:latest
+
+USER node
+WORKDIR /home/node/app
+
+# If the package.json file is not changed, the RUN npm install step will be cached
+# and subsequent builds will be faster
+COPY package.json .
+RUN npm install
